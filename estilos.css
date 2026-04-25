@@ -1,35 +1,35 @@
-{
+/* Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Fondo */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #667eea, #764ba2);
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   padding: 40px 20px;
-  color: #333;
 }
 
-/* Contenedor principal */
+/* Contenedor */
 .container {
-  background: #fff;
+  background: white;
   width: 100%;
   max-width: 600px;
   border-radius: 15px;
   padding: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* Título */
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #444;
+  color: #333;
 }
 
 /* Formulario */
@@ -46,7 +46,7 @@ input, select, button {
   font-size: 14px;
 }
 
-/* Inputs focus */
+/* Focus */
 input:focus, select:focus {
   outline: none;
   border-color: #667eea;
@@ -104,19 +104,14 @@ li:hover {
   background: #f1f1f1;
 }
 
-/* Texto de la transacción */
-li span {
-  font-size: 14px;
-}
-
-/* Botones dentro de cada item */
+/* Botones pequeños */
 li button {
   margin-left: 5px;
   padding: 5px 8px;
   font-size: 12px;
 }
 
-/* Botón editar */
+/* Editar */
 li button:first-of-type {
   background: #38a169;
 }
@@ -125,7 +120,7 @@ li button:first-of-type:hover {
   background: #2f855a;
 }
 
-/* Botón eliminar */
+/* Eliminar */
 li button:last-of-type {
   background: #e53e3e;
 }
