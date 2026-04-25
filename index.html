@@ -1,0 +1,30 @@
+<body>
+
+<div class="container">
+
+<h1>💰 Control de Gastos</h1>
+
+<form id="form">
+  <input type="text" id="descripcion" placeholder="Descripción" required>
+  <input type="number" id="monto" placeholder="Monto" required>
+  
+  <select id="tipo">
+    <option value="gasto">Gasto</option>
+    <option value="ingreso">Ingreso</option>
+  </select>
+
+  <input type="text" id="categoria" placeholder="Categoría" required>
+  
+  <button type="submit">Guardar</button>
+</form>
+
+<h2>Balance: <span id="balance">0</span></h2>
+
+<input type="text" id="filtro" placeholder="Filtrar por categoría...">
+
+<ul id="lista"></ul>
+
+</div>
+
+<script src="app.js"></script>
+</body>
