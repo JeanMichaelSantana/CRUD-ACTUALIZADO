@@ -1,0 +1,135 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Formulario */
+form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Inputs focus */
+input:focus, select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Botón principal */
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Balance */
+h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#balance {
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Filtro */
+#filtro {
+  margin-bottom: 15px;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+}
+
+/* Tarjetas */
+li {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  background: #f1f1f1;
+}
+
+/* Texto de la transacción */
+li span {
+  font-size: 14px;
+}
+
+/* Botones dentro de cada item */
+li button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+/* Botón editar */
+li button:first-of-type {
+  background: #38a169;
+}
+
+li button:first-of-type:hover {
+  background: #2f855a;
+}
+
+/* Botón eliminar */
+li button:last-of-type {
+  background: #e53e3e;
+}
+
+li button:last-of-type:hover {
+  background: #c53030;
+}
